@@ -1,0 +1,83 @@
+{
+	"name": "DelimitedText4",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"copyfile": {
+				"type": "string",
+				"defaultValue": "@pipeline().parameters.sourceFile"
+			},
+			"copyfolder": {
+				"type": "string",
+				"defaultValue": "@pipeline().parameters.sourceFolder"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "adfrepro",
+				"fileSystem": "containerone"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "progress_percent",
+				"type": "String"
+			},
+			{
+				"name": "status",
+				"type": "String"
+			},
+			{
+				"name": "request_id",
+				"type": "String"
+			},
+			{
+				"name": "login_name",
+				"type": "String"
+			},
+			{
+				"name": "start_time",
+				"type": "String"
+			},
+			{
+				"name": "end_time",
+				"type": "String"
+			},
+			{
+				"name": "total_elapsed_time",
+				"type": "String"
+			},
+			{
+				"name": "command",
+				"type": "String"
+			},
+			{
+				"name": "details",
+				"type": "String"
+			},
+			{
+				"name": "session_id",
+				"type": "String"
+			},
+			{
+				"name": "resource_class",
+				"type": "String"
+			},
+			{
+				"name": "concurrency_slots_used",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

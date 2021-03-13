@@ -1,0 +1,20 @@
+{
+	"name": "AzureMLService1",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureMLService",
+		"typeProperties": {
+			"subscriptionId": "09f59576-67c4-4f5e-9d08-584459ec5183",
+			"resourceGroupName": "Raghu_Repro",
+			"mlWorkspaceName": "raghutest24",
+			"servicePrincipalId": "f3f9d12c-8f40-4c45-9a50-1fd44929527f",
+			"tenant": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIlJBR0hVV09SS1NQQUNFXzU5NTk1YzA4LWI5ZGQtNDAyMS05YTdmLTBlODg3NWQ4YjNjMSINCn0="
+		},
+		"connectVia": {
+			"referenceName": "AutoResolveIntegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
